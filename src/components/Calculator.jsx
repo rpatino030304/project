@@ -44,7 +44,7 @@ function Calculator() {
         <h1 className="calculator-title">Calculator</h1>
 
         <input
-          type="text"
+          type="number"
           placeholder="Enter first number"
           value={num1}
           onChange={(e) => setNum1(e.target.value)}
@@ -64,7 +64,7 @@ function Calculator() {
         </select>
 
         <input
-          type="text"
+          type="number"
           placeholder="Enter second number"
           value={num2}
           onChange={(e) => setNum2(e.target.value)}
