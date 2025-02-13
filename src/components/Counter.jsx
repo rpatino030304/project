@@ -7,11 +7,11 @@ function Counter() {
     setCount(count + 1);
   }
 
-  function decrementNumber() {
+  function decrementNumber() { 
     if(count > 0){
       setCount(count - 1);
     }else{
-      alert("Opps you reach Zero");
+      alert("LessThanZero");
     }
   }
 
@@ -20,12 +20,14 @@ function Counter() {
   }
 
   return (
-    <div>
-       
-      <p>Count: {count}</p>
-      <button onClick={incrementNumber}>Increment</button>
-      <button onClick={decrementNumber}>Decrement</button>
-      <button onClick={resetNumber}>Reset</button>
+    <div className="box-container counter-box">
+      <h1 className="counter-title">Counter</h1>
+      <div className="counter-display">{count}</div>
+      <div className="counter-buttons">
+        <button onClick={incrementNumber}>Increment</button>
+        <button onClick={decrementNumber}>Decrement</button>
+        <button onClick={resetNumber} className="reset-button">Reset</button>
+      </div>
     </div>
   );
 }

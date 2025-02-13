@@ -34,12 +34,10 @@ function Calculator() {
     }
 
     setResult(calcResult);
-    setNum1("");
-    setNum2("");
   };
 
   return (
-    <div className="calculator-container">
+    <div className="box-container calculator-box">
       <div className="calculator-card">
         <h1 className="calculator-title">Calculator</h1>
 
@@ -57,10 +55,10 @@ function Calculator() {
           onChange={(e) => setOperator(e.target.value)}
           className="calculator-select"
         >
-          <option value="+">Additionnnnnn (+)</option>
-          <option value="-">Subtract (-)</option>
-          <option value="*">Multiply (*)</option>
-          <option value="/">Divide (/)</option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
         </select>
 
         <input

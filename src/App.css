@@ -1,61 +1,126 @@
-.calculator-container {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f2f5;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  padding: 20px;
 }
 
-.calculator-card {  
-  background: white;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  width: 100%;
-  max-width: 350px;
+/* Box Style for Both Calculator and Counter */
+.box-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   text-align: center;
+  width: 300px;
+  height: 400px; /* Fixed height for consistency */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
 }
 
+/* Calculator Styles */
 .calculator-title {
-  font-size: 2rem;
-  color: #4f46e5;
-  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .calculator-input,
 .calculator-select {
   width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  outline: none;
-  transition: box-shadow 0.3s ease;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-.calculator-input:focus,
-.calculator-select:focus {
-  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+/* Specific Height Adjustment for Calculator */
+.calculator-box {
+  height: 350px; /* Adjust this value as needed */
 }
+
 
 .calculate-button {
-  background-color: #4f46e5;
+  width: 100%;
+  background: #4CAF50;
   color: white;
-  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0.5rem;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
-  margin-top: 1rem;
+  font-size: 16px;
 }
 
 .calculate-button:hover {
-  background-color: #4338ca;
+  background: #45a049;
 }
 
 .calculator-result {
-  font-size: 1.5rem;
-  color: #10b981;
-  margin-top: 1rem;
+  font-size: 20px;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Counter Styles */
+.counter-title {
+  font-size: 24px;
+  color: #444;
+}
+
+.counter-display {
+  font-size: 40px;
+  color: #007BFF;
   font-weight: bold;
+  padding: 10px;
+  border: 2px dashed #007BFF;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Specific Height Adjustment for Counter */
+.counter-box {
+  height: 250px; /* Adjust this value as needed */
+}
+
+
+.counter-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.counter-buttons button {
+  flex: 1;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.counter-buttons button:hover {
+  background: #0056b3;
+}
+
+.counter-buttons button.reset-button {
+  background: #dc3545;
+}
+
+.counter-buttons button.reset-button:hover {
+  background: #c82333;
 }
