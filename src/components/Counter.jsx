@@ -11,7 +11,7 @@ function Counter() {
     if(count > 0){
       setCount(count - 1);
     }else{
-      alert("LessThanZero");
+      alert("Less Than Zero");
     }
   }
 
