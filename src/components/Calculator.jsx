@@ -39,7 +39,7 @@ function Calculator() {
   return (
     <div className="box-container calculator-box">
       <div className="calculator-card">
-        <h1 className="calculator-title">Calculator</h1>
+        <h1 className="calculator-title">Calculator:</h1>
 
         <input
           type="number"
